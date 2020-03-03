@@ -8,3 +8,7 @@
 - 右上角的三个小点符号用于删除这个导航链接
 - 目前实现的搜索引擎是百度搜索
 
+
+
+> parcel 
+>parcel  build src/index.html --no-minify --public-url https://github.com/Forkeep/google-nav-demo/tree/master/dist
