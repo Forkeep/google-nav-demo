@@ -1,0 +1,515 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before {
+    box-sizing: border-box;
+}
+
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button, input, select, textarea {
+    font: inherit;
+}
+
+/*PC端*/
+@media (min-width: 500px) {
+    #globalHeader {
+        display: flex;
+        flex-direction: row-reverse;
+        max-height: 64px;
+        font-size: 13px;
+        padding: 8px;
+        align-items: center;
+    }
+
+    #globalHeader .personal-acount {
+        cursor: pointer;
+
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .personal-acount .wrapper-inner:hover {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background-color: #e0e0e0;
+        border-radius: 50%;
+    }
+
+
+    .personal-acount .acount-inner {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-color: #e0732d;
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+
+    #globalHeader .google-menu {
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+
+    }
+    #globalHeader .menu-wrapper:hover {
+        width: 38px;
+        height: 38px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: #e0e0e0;
+
+
+    }
+    .google-menu svg {
+        vertical-align: -0.15em;
+        width: 1.2em;
+        height: 1.2em;
+    }
+
+    .google-images, .gmail {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 15px;
+    }
+
+    .google-images:hover, .gmail:hover {
+        text-decoration: underline;
+        line-height: 10px;
+
+    }
+
+    #gloablMain {
+        max-height: 624px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #gloablMain .logo {
+        margin-top: 40px;
+        height: 238px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom: 36px;
+    }
+    #gloablMain .logo img{
+        height:92px
+    }
+
+
+    #gloablMain .search {
+        width: 561px;
+        height: 44px;
+        border-radius: 30px;
+        box-shadow: 0px 0px 12px 0px rgba(97, 95, 97, 0.59);
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+
+    #gloablMain #search-google-form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 8px;
+        flex-grow: 1;
+    }
+
+    #gloablMain #search-google-form > input {
+        flex-grow: 1;
+        height: 20px;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        font-weight: 400;
+
+    }
+
+    #gloablMain #search-google-form > input:focus::placeholder {
+        color: transparent;
+    }
+
+    .personal-site {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        max-width: 561px;
+        width: 1000px;
+    }
+
+    .personal-site .one-site {
+        position: relative;
+        cursor: pointer;
+        margin-bottom: 16px;
+        /*border: 1px red solid;*/
+        width: 112px;
+        height: 112px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .personal-site .delete{
+        display: none;
+    }
+    .personal-site .delete.active{
+        position: absolute;
+        right: 2px;
+        top: 5px;
+        display: block;
+    }
+
+    .personal-site .one-site:hover {
+        background-color: #f8f8f8;
+
+    }
+
+
+    .one-site .site-logo {
+        width: 48px;
+        height: 48px;
+        background-color: #f0f0f0;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-weight: 700;
+
+    }
+    .site-logo-wrapper{
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        /*background-color: blue;*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .one-site .site-name {
+        font-weight: 400;
+        font-size: 10px;
+
+    }
+
+    .add-site{
+        width: 112px;
+        height: 112px;
+        /*border:1px solid red;*/
+        border-radius: 8px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+    .add-site:hover{
+        background-color: #f8f8f8;
+    }
+    .add-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+        background-color: #f0f0f0;
+        border-radius: 50%;
+
+    }
+    .add-name{
+        font-size: 10px;
+
+    }
+
+}
+
+/*移动端*/
+
+@media (max-width: 500px) {
+    #globalHeader {
+        display: flex;
+        flex-direction: row-reverse;
+        max-height: 64px;
+        font-size: 13px;
+        padding: 8px;
+        align-items: center;
+    }
+
+    #globalHeader .personal-acount {
+        cursor: pointer;
+
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .personal-acount .wrapper-inner:hover {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background-color: #e0e0e0;
+        border-radius: 50%;
+    }
+
+
+    .personal-acount .acount-inner {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-color: #e0732d;
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+
+    #globalHeader .google-menu {
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+
+    }
+    #globalHeader .menu-wrapper:hover {
+        width: 38px;
+        height: 38px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: #e0e0e0;
+
+
+    }
+    .google-menu svg {
+        vertical-align: -0.15em;
+        width: 1.2em;
+        height: 1.2em;
+    }
+
+    .google-images, .gmail {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 15px;
+    }
+
+    .google-images:hover, .gmail:hover {
+        text-decoration: underline;
+        line-height: 10px;
+
+    }
+
+    #gloablMain {
+        max-height: 624px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #gloablMain .logo {
+        margin-top: 90px;
+        max-width: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom: 36px;
+    }
+    #gloablMain .logo img{
+        max-width: 200px;
+    }
+
+    #gloablMain .search {
+        max-width: 900px;
+        height: 44px;
+        border-radius: 30px;
+        box-shadow: 0px 0px 12px 0px rgba(97, 95, 97, 0.59);
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+
+    #gloablMain #search-google-form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 8px;
+        flex-grow: 1;
+    }
+
+    #gloablMain #search-google-form > input {
+        flex-grow: 1;
+        width: 260px;
+        height: 20px;
+        border: none;
+        outline: none;
+        font-size: 10px;
+    }
+
+    #gloablMain #search-google-form > input:focus::placeholder {
+        color: transparent;
+    }
+
+    .personal-site {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        max-width: 224px;
+        width: 1000px;
+    }
+
+    .personal-site .one-site {
+        position: relative;
+        cursor: pointer;
+        margin-bottom: 0px;
+        /*border: 1px red solid;*/
+        width: 112px;
+        height: 112px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .personal-site .delete{
+        position: absolute;
+        right: 2px;
+        top: 5px;
+        display: block;
+    }
+
+    .personal-site .one-site:hover {
+        background-color: #f8f8f8;
+
+    }
+
+
+    .one-site .site-logo {
+        width: 48px;
+        height: 48px;
+        background-color: #f0f0f0;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-weight: 700;
+
+    }
+    .site-logo-wrapper{
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        /*background-color: blue;*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .one-site .site-name {
+        font-weight: 400;
+        font-size: 10px;
+
+    }
+
+    .add-site{
+        width: 112px;
+        height: 112px;
+        /*border:1px solid red;*/
+        border-radius: 8px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+    .add-site:hover{
+        background-color: #f8f8f8;
+    }
+    .add-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+        background-color: #f0f0f0;
+        border-radius: 50%;
+
+    }
+    .add-name{
+        font-size: 10px;
+
+    }
+
+}
+
+/*# sourceMappingURL=style.2a5c5857.css.map */
