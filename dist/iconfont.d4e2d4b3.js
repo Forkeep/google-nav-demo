@@ -165,4 +165,4 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   });
 }(window);
 },{}]},{},["iLJV"], null)
-//# sourceMappingURL=https://github.com/Forkeep/google-nav-demo/dist/iconfont.d4e2d4b3.js.map
+//# sourceMappingURL=https://github.com/Forkeep/google-nav-demo/tree/master/dist/iconfont.d4e2d4b3.js.map
