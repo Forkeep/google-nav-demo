@@ -11,4 +11,4 @@
 
 
 > parcel 
->parcel  build src/index.html --no-minify --public-url https://github.com/Forkeep/google-nav-demo/tree/master/dist
+>parcel  build src/index.html --no-minify --public-url ./
